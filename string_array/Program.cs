@@ -12,7 +12,7 @@ System.Console.WriteLine("Введите размер массива строк:
 do
 {
     input = Console.ReadLine()!;
-} while (int.Parse(input) <= 0 || !int.TryParse(input, out n));
+} while (!int.TryParse(input, out n) || int.Parse(input) <= 0);
 size = int.Parse(input);
 string[] strings = new string[size];
 
