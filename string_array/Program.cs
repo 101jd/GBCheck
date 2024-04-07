@@ -6,6 +6,7 @@ using System.Runtime.Intrinsics.Arm;
 int n = 0;
 string input;
 int size;
+int maxLength = 3;
 
 // Задаём размер массива и создаём массив строк
 System.Console.WriteLine("Введите размер массива строк:");
@@ -26,7 +27,7 @@ for (int i = 0; i < strings.Length; i++)
 // Проверка длины строки
 bool IsLess(string s)
 {
-    if (s.Length <= 3)
+    if (s.Length <= maxLength)
         return true;
     return false;
 }
